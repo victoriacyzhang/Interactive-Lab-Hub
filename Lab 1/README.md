@@ -72,11 +72,23 @@ The interactive device can be anything *except* a computer, a tablet computer or
 
 Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
 
+> Setting:
+> > This interaction is happening at any indoor space. For example, such interaction can happen in the bedroom, kitchen, living room, or the office.
+> Players:
+> > The players are anyone who occupy in the setting and flying bugs. 
+> Activity:
+> > The device serves as an indoor tool to help catching flying bugs. The device light is green when it doesn't detect any moving objects (idle). It turns to yellow when it detects a flying object (active), and will try to catch the flying object with the clam tool. Once there is a bug inside, the device light will turn red to indicate so.
+> Goal:
+> > The goal of the device is to make catching bugs easier.  
+
 \*\***Include a picture of your storyboard here**\*\*
+
+![img](https://user-images.githubusercontent.com/35357433/132257150-5be11f53-5759-4de5-bb67-2c67dc0b05c5.jpg)
 
 Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
 
 \*\***Summarize feedback you got here.**\*\*
+> I generated this idea after the breakout session, so I wasn't able to get feedback yet.
 
 
 ## Part B. Act out the Interaction
@@ -84,9 +96,10 @@ Present your idea to the other people in your breakout room. You can just get fe
 Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
 
 \*\***Are there things that seemed better on paper than acted out?**\*\*
+> The device also requires the bug to be in the physical range of the clam tool to be caught. It also has to be very fast to catch all the bugs in the physical range. Right now, the device can also only catch one bug at a time. It has to wait for some sort of reset/cleaning from the human actor to resume to the idle mode.
 
 \*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
-
+> I want to continue ideating on a system where the device can automatically pass the caught bug to the bottom box area (as a "trash can") so that it can continue to catch other bugs before a human actor is able to reset/clean it. Perhaps the bottom of the clam tool can also be a location to place a bait to attract bugs to enter the clam tool region.
 
 ## Part C. Prototype the device
 
@@ -99,6 +112,7 @@ We invented this tool for this lab!
 If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
 
 \*\***Give us feedback on Tinkerbelle.**\*\*
+> I wasn't able to get Tinkerbelle running on my Mac. It hung for a while and did nothing. I wasn't able to resolve the issue.
 
 
 ## Part D. Wizard the device
@@ -107,6 +121,7 @@ Take a little time to set up the wizarding set-up that allows for someone to rem
 \*\***Include your first attempts at recording the set-up video here.**\*\*
 
 Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
+> [Link to video](https://www.youtube.com/watch?v=lCYer9ZyOwE)
 
 \*\***Show the follow-up work here.**\*\*
 
@@ -118,13 +133,16 @@ Only now should you start worrying about what the device should look like. Devel
 Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
 
 \*\***Include sketches of what your device might look like here.**\*\*
+![IMG_0317](https://user-images.githubusercontent.com/35357433/132262678-e2b7eea6-16a4-4532-9ea3-825587094fc3.jpg)
 
 \*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
-
+> I wanted to design a device that is simple and intuitive enough to use and achieves the purpose well. I am still experimenting with the shapes of the clam tool to allow maximum efficiency in catching a bug. I have chosen the curved shape to allow more room inside to enclose a bug when trying to catch a bug.
 
 ## Part F. Record
 
 \*\***Take a video of your prototyped interaction.**\*\*
+> I am linking the same video as above because it communicates what I have in mind for the current stage of prototype.
+> > [Link to video](https://www.youtube.com/watch?v=lCYer9ZyOwE)
 
 \*\***Please indicate anyone you collaborated with on this Lab.**\*\*
 Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
