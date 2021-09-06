@@ -74,10 +74,13 @@ Sketch a storyboard of the interactions you are planning. It does not need to be
 
 > Setting:
 > > This interaction is happening at any indoor space. For example, such interaction can happen in the bedroom, kitchen, living room, or the office.
+
 > Players:
 > > The players are anyone who occupy in the setting and flying bugs. 
+
 > Activity:
 > > The device serves as an indoor tool to help catching flying bugs. The device light is green when it doesn't detect any moving objects (idle). It turns to yellow when it detects a flying object (active), and will try to catch the flying object with the clam tool. Once there is a bug inside, the device light will turn red to indicate so.
+
 > Goal:
 > > The goal of the device is to make catching bugs easier.  
 
