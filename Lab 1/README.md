@@ -162,6 +162,7 @@ This describes the second week's work for this lab activity.
 You will be assigned three partners from another group. Go to their github pages, view their videos, and provide them with reactions, suggestions & feedback: explain to them what you saw happening in their video. Guess the scene and the goals of the character. Ask them about anything that wasn’t clear. 
 
 \*\***Summarize feedback from your partners here.**\*\*
+> One common feedback was that there was no interaction between people and the device. If the device were to be fully automatic, there is no human involvement necessary. The prototype also does not clearly illustrate how the bug catcher is going to work yet. 
 
 ## Make it your own
 
