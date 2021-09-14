@@ -172,3 +172,99 @@ Do last week’s assignment again, but this time:
 3) We will be grading with an emphasis on creativity. 
 
 \*\***Document everything here. (Particularly, we would like to see the storyboard and video, although photos of the prototype are also great.)**\*\*
+
+## Part A. Plan 
+
+To stage the interaction with your interactive device, think about:
+
+_Setting:_ Where is this interaction happening? (e.g., a jungle, the kitchen) When is it happening?
+
+_Players:_ Who is involved in the interaction? Who else is there? If you reflect on the design of current day interactive devices like the Amazon Alexa, it’s clear they didn’t take into account people who had roommates, or the presence of children. Think through all the people who are in the setting.
+
+_Activity:_ What is happening between the actors?
+
+_Goals:_ What are the goals of each player? (e.g., jumping to a tree, opening the fridge). 
+
+The interactive device can be anything *except* a computer, a tablet computer or a smart phone, but the main way it interacts needs to be using light.
+
+\*\***Describe your setting, players, activity and goals here.**\*\*
+
+Sketch a storyboard of the interactions you are planning. It does not need to be perfect, but must get across the behavior of the interactive device and the other characters in the scene. 
+
+> Setting:
+> > This interaction can happen anywhere.
+
+> Players:
+> > The players are anyone with a morning routine.
+
+> Activity:
+> > The device serves as a morning routine time tracking tool. User can customize color, text, and time for each task. Once turned on (when user has woken up), the device will play the colors with their corresponding time in a sequence, until all the sequence is finished. Each color will gradually become more and more opaque in their own segment, signifying how much time has passed for that task. A buzz sound will also be played after each task is done to remind user to move on to the next task.
+
+> Goal:
+> > The goal of the device is to help user stay on track with their morning routine tasks.
+
+\*\***Include a picture of your storyboard here**\*\*
+
+![IMG_0318 2](https://user-images.githubusercontent.com/35357433/133181377-abc756a3-396b-4de9-8178-25fab944a725.jpg)
+
+Present your idea to the other people in your breakout room. You can just get feedback from one another or you can work together on the other parts of the lab.
+
+\*\***Summarize feedback you got here.**\*\*
+> I generated this idea after the class session, so I wasn't able to get feedback yet.
+
+
+## Part B. Act out the Interaction
+
+Try physically acting out the interaction you planned. For now, you can just pretend the device is doing the things you’ve scripted for it. 
+
+\*\***Are there things that seemed better on paper than acted out?**\*\*
+> The device requires to be visible at all times to be effective. It would be best for it to be a wearable device so it is easy to carry it arround.
+
+\*\***Are there new ideas that occur to you or your collaborators that come up from the acting?**\*\*
+> It would be nice for it to display colors that can serve as a tool to uplift user's mood for the day as well.
+
+## Part C. Prototype the device
+
+You will be using your smartphone as a stand-in for the device you are prototyping. You will use the browser of your smart phone to act as a “light” and use a remote control interface to remotely change the light on that device. 
+
+Code for the "Tinkerbelle" tool, and instructions for setting up the server and your phone are [here](https://github.com/FAR-Lab/tinkerbelle).
+
+We invented this tool for this lab! 
+
+If you run into technical issues with this tool, you can also use a light switch, dimmer, etc. that you can can manually or remotely control.
+
+\*\***Give us feedback on Tinkerbelle.**\*\*
+> I wasn't able to get Tinkerbelle running on my Mac. It hung for a while and did nothing. I wasn't able to resolve the issue.
+
+
+## Part D. Wizard the device
+Take a little time to set up the wizarding set-up that allows for someone to remotely control the device while someone acts with it. Hint: You can use Zoom to record videos, and you can pin someone’s video feed if that is the scene which you want to record. 
+
+\*\***Include your first attempts at recording the set-up video here.**\*\*
+
+Now, hange the goal within the same setting, and update the interaction with the paper prototype. 
+> [Link to video](https://youtu.be/4CE8H7hfFNw)
+
+\*\***Show the follow-up work here.**\*\*
+
+
+## Part E. Costume the device
+
+Only now should you start worrying about what the device should look like. Develop a costume so that you can use your phone as this device.
+
+Think about the setting of the device: is the environment a place where the device could overheat? Is water a danger? Does it need to have bright colors in an emergency setting?
+
+\*\***Include sketches of what your device might look like here.**\*\*
+![IMG_0327](https://user-images.githubusercontent.com/35357433/133192282-f322b8f1-29ad-4d23-b19e-260612a439aa.jpg)
+
+\*\***What concerns or opportunitities are influencing the way you've designed the device to look?**\*\*
+> I want this device to be very convenient to carry around, hence the wearable watch design.
+
+## Part F. Record
+
+\*\***Take a video of your prototyped interaction.**\*\*
+> I am linking the same video as above because it communicates what I have in mind for the current stage of prototype.
+> > [Link to video](https://youtu.be/4CE8H7hfFNw)
+
+\*\***Please indicate anyone you collaborated with on this Lab.**\*\*
+Be generous in acknowledging their contributions! And also recognizing any other influences (e.g. from YouTube, Github, Twitter) that informed your design. 
