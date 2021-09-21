@@ -189,12 +189,12 @@ After that, Git will ask you to login to your GitHub account to push the updates
 
 ## Part F. 
 ## Make a short video of your modified barebones PiClock
-
 \*\*\***Take a video of your PiClock.**\*\*\*
+> [Here is the link](https://youtu.be/lTTcrR7H6c4)
 
 ## Part G. 
 ## Sketch and brainstorm further interactions and features you would like for your clock for Part 2.
-
+> For part 2, I would like my clock to be able to take user input and generate relevant information based on what they've entered (location, date, etc.). Perhaps the clock could also give recommendations on what the user can do for fun / in their daily routine based on the time/date. In general, I would like my clock to have more interactive visual element so that it would be more fun to play with.
 
 # Prep for Part 2
 
