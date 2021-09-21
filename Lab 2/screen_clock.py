@@ -75,6 +75,7 @@ city = a[city_name]
 sun = city.sun(date=date.today(), local=True)
 headline = ""
 food = ""
+imageName = ""
 now = datetime.datetime.now()
 datestr = now.strftime("%B %d, %Y")
 
@@ -106,12 +107,15 @@ while True:
     if (compTime(now_t, evening_t)):
         headline = "Good evening, New York!"
         food = "Don't forget your dinner!"
+        imageName = "ny_evening.jpeg"
     elif (compTime(now_t, getTime(sun['noon']))):
         headline = "Good afternoon, New York!"
         food = "Don't forget your lunch!"
+        imageName = "ny_afternoon.jpeg"
     else:
         headline = "Good morning, New York!"
         food = "Don't forget your breakfast!"
+        imageName = "ny_morning.jpeg"
     proportion_day = (int(now_t[0]) * 60 * 60 + int(now_t[1]) * 60 + int(now_t[2])) / 86400 * 100
     proportion_day_str = "You have completed " + str(int(proportion_day)) + "% of today. Congrats!"
     if (not buttonA.value) and buttonB.value:
@@ -121,6 +125,12 @@ while True:
     elif (not buttonB.value) and buttonA.value:
         draw.text((0,0), food, font=font, fill="#91B500")
         disp.image(image, rotation)
+    elif (not buttonA.value) and (not buttonB.value):
+        image2 = Image.open(imageName)
+        
+        image2 = image2.resize((135, 240), Image.BICUBIC)
+        image2 = image2.crop((0, 0, 240, 135))
+        disp.image(image2, rotation)
     else:
         draw.text((0, 0), headline, font=font, fill="#89CFF0")
         draw.text((0, 25), datestr, font=font, fill="#89CFF0")
