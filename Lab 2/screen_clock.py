@@ -97,12 +97,27 @@ def compTime(now, com):
                 return True
     return False
 
+def displayBinary(l):
+    res = ""
+    for ele in l:
+        if ele  == 1:
+            res = res + "* "
+        else:
+            res = res + "- "
+    return res
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
     #TODO: Lab 2 part D work should be filled in here. You should be able to look in cli_clock.py and stats.py 
     currTime = strftime("%H:%M:%S")
     now_t = getTime(datetime.datetime.now())
+    hour = int(now_t[0])
+    minute = int(now_t[1])
+    second = int(now_t[2])
+    hour_binary = displayBinary([int(i) for i in list('{0:0b}'.format(hour))])
+    minute_binary = displayBinary([int(i) for i in list('{0:0b}'.format(minute))])
+    second_binary = displayBinary([int(i) for i in list('{0:0b}'.format(second))])
     evening_t = getTime(sun['sunset'])
     if (compTime(now_t, evening_t)):
         headline = "Good evening, New York!"
@@ -119,18 +134,17 @@ while True:
     proportion_day = (int(now_t[0]) * 60 * 60 + int(now_t[1]) * 60 + int(now_t[2])) / 86400 * 100
     proportion_day_str = "You have completed " + str(int(proportion_day)) + "% of today. Congrats!"
     if (not buttonA.value) and buttonB.value:
-        draw.text((0, 0), proportion_day_str[:19], font=font, fill="#F4C2C2")
-        draw.text((0, 25), proportion_day_str[19:], font=font, fill="#F3C2C2")
+        draw.text((10, 40), proportion_day_str[:19], font=font, fill="#F4C2C2")
+        draw.text((10, 65), proportion_day_str[19:], font=font, fill="#F3C2C2")
         disp.image(image, rotation)
     elif (not buttonB.value) and buttonA.value:
-        draw.text((0,0), food, font=font, fill="#91B500")
+        draw.text((10,50), food, font=font, fill="#91B500")
         disp.image(image, rotation)
     elif (not buttonA.value) and (not buttonB.value):
-        image2 = Image.open(imageName)
-        
-        image2 = image2.resize((135, 240), Image.BICUBIC)
-        image2 = image2.crop((0, 0, 240, 135))
-        disp.image(image2, rotation)
+        draw.text((20,20), hour_binary, font=font_time, fill="#808080")
+        draw.text((20,50), minute_binary, font=font_time, fill="#808080")
+        draw.text((20,80), second_binary, font=font_time, fill="#808080")
+        disp.image(image, rotation)
     else:
         draw.text((0, 0), headline, font=font, fill="#89CFF0")
         draw.text((0, 25), datestr, font=font, fill="#89CFF0")
