@@ -152,27 +152,26 @@ The system should:
 * require participants to speak to it. 
 
 *Document how the system works*
-
-*Include videos or screencaptures of both the system and the controller.*
+> ![miro](https://user-images.githubusercontent.com/35357433/137246510-53cec827-2bc3-444f-a924-6bc76d8a409b.jpg)
+> ![IMG_6445](https://user-images.githubusercontent.com/35357433/137248645-7670dbce-3c4c-4dec-b296-176e52ebd900.jpg)
+> This system is an intelligent door security system. It knows the faces of people who live there. It will conduct a face recognition for every new comer. If they live there, the system will let them in and play any messages that guests may have left. If the don't live there, the system will ask if they want to leave a voice message.
+> The controller consists of the Raspberry Pi, webcam (with speaker), and the mic.
 
 ## Test the system
 Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
+> [Here is the link](https://youtu.be/tHjkIBP1nyU)
 
 Answer the following:
-
 ### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
+> I think that the system was pretty straightforward and had a real-world application to it. It had the correct responses to each speech input possibility from the user and could handle the conversation well. 
+> What didn't work as well was that the conversation was limited. The conversation flow is very predicted and the user cannot converse it for as long as they wanted. 
 
 ### What worked well about the controller and what didn't?
-
-\*\**your answer here*\*\*
+> The speech recognition was sometimes kind of off and would throw off the program a little bit. I have to speak really loudly and make my word super pronounced for the program to correctly identify it.
+> Another thing that didn't work so well about the controller was that some processes took too long and left the user a bit confused. The controller also lacked some feedback on when it is recording / taking picture exactly (a slight delay to when it says to start and when it actually starts), which was a bit confusing. 
 
 ### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
-
-\*\**your answer here*\*\*
-
+> In the future, I would definitely implement more feedback for user action in my system. I think that it is crucial for the user to confirm whether or not they have done something correctly. I would also code more possible responses because we cannot expect a "perfect user" response every single time.
 
 ### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
-
-\*\**your answer here*\*\*
-
+> I would like to code a database of all possible responses that my system gets and tailor future conversations to them. I think that I could also make use of buttons and LED lights as feedback and interactive tools. They can help me indicating when the system is taking a picture / recording  and so on.
