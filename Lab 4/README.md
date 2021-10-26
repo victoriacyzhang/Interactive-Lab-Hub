@@ -174,11 +174,15 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_VL53L
 Usually, sensors need to positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
 
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
+![IMG_0345](https://user-images.githubusercontent.com/35357433/137831914-34005975-4aeb-4ef0-b608-b8278bc14321.jpg)
+> The sensor I chose for this part is the joystick. The device that holds the joystick should be fairly small (enough to be grabbed by hand) because the joystick needs to be controlled by hands. If they are overly large then the joystick would not be as easy to navigate.
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+> I wonder what is the best way to hold the device with a joystick? Shapes of the device can affect the user experience.
+> What finger(s) should we expect users to navigate the joystick with? 
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
-
+> I will focus on design one (using joystick to simulate a driving game).
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
@@ -219,16 +223,27 @@ Here is an example:
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
+![IMG_0346](https://user-images.githubusercontent.com/35357433/137832226-4621017b-8f11-4255-a695-429f76a91328.jpg)
+![IMG_0347](https://user-images.githubusercontent.com/35357433/137832262-100fa309-0780-43df-974d-f7c0b4764334.jpg)
+![IMG_0348](https://user-images.githubusercontent.com/35357433/137832279-45591948-68d1-4654-8e8c-fc13493e41a2.jpg)
+![IMG_0349](https://user-images.githubusercontent.com/35357433/137832310-836121e5-d2f0-46e5-ac8e-87698ac52206.jpg)
+![IMG_0350](https://user-images.githubusercontent.com/35357433/137832329-c2b8e3fc-6e61-4519-93d3-9687737ebd4d.jpg)
+> All of the designs shown demonstrate putting the sensor in a box-shaped object. It is so that the pi can be easily stored within the box and be slided in and out as needed. 
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+> What length/width/thickness should I use to maximize the user experience for everyone (or perhaps just for an average user)? 
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
+> Design 1 seemed the most intuitive to use and is the closest to how joysticks are commonly designed to be used in real life.
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+> The device will be a rectangular box (held by two hands) that holds a display screen on the left and the joystick on the right. It will include both the game screen and the game joystick in one so that user will have everything they need in one device. The device should be relatively small so that it can be comfortably grabbed by two hands. It will also be easy to carry around so that the user can play the game anywhere.
 
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
+![IMG_6556](https://user-images.githubusercontent.com/35357433/137834529-bd1a4407-6044-4d18-a556-45e6a0160715.jpg)
+> This is the prototype for the game console. User can hold the device and play using the two hands.
 
 
 LAB PART 2
