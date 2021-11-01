@@ -234,7 +234,7 @@ Think about how you want to present the information about what your sensor is se
 > What length/width/thickness should I use to maximize the user experience for everyone (or perhaps just for an average user)? 
 
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
-> Design 1 seemed the most intuitive to use and is the closest to how joysticks are commonly designed to be used in real life.
+> Design 1 seemed the most intuitive to use and is the closest to how joysticks are commonly designed to be used in real life. I tried holding a paper prototype for all designs in their required positions and most felt awkward. It feels the easiest to just put screen and joystick side-by-side in a device small enough to be comfortably held by two hands.
 
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
 > The device will be a rectangular box (held by two hands) that holds a display screen on the left and the joystick on the right. It will include both the game screen and the game joystick in one so that user will have everything they need in one device. The device should be relatively small so that it can be comfortably grabbed by two hands. It will also be easy to carry around so that the user can play the game anywhere.
@@ -283,6 +283,14 @@ We encourage you to try using these controls, **while** paying particular attent
 
 ### Part F
 ### Record
+
+This device simulates a driving game experience. User will see the driving instruction on the screen and will be expected to use the joystick to complete the asked task. If the user does the wrong action on the joystick, the user loses and the game ends.
+
+Here's my updated design:
+![IMG_0351](https://user-images.githubusercontent.com/35357433/138802751-e33383a1-485d-4429-9654-62e1550eebf8.jpg)
+My design for part two is very similar to what I had for part one. I added a charger gap and a joystick holder so that the device is more user friendly. The pi and joystick will have to be inserted into the device and it will be ready to use.
+
+[Here is the link to interaction](https://youtu.be/3X2vWBhx5lQ)
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
