@@ -100,6 +100,22 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
+![IMG_6756](https://user-images.githubusercontent.com/35357433/139716446-18410bec-a931-4996-aedb-268d6a2ec927.jpg)
+> Contour Detection:
+> > Contour detection would be useful to create an application that asseses the user's mood based on the contour of their facial expression. We can analyze common contours for certain emotions and evaluate the user's current emotion based on the trained data.
+
+![IMG_6758](https://user-images.githubusercontent.com/35357433/139716473-8bb8bab1-bd74-4401-913a-ab8fe2c3b115.jpg)
+> Face Detection:
+> > Face detection would be useful to create a security system that checks who is allowed in and who isn't. If the system sees an unfamilar face, it can "learn" the face for next time.
+
+![IMG_6759](https://user-images.githubusercontent.com/35357433/139716497-ca1dc888-e607-4a5c-be51-73620965ac1f.jpg)
+> Flow Detection:
+> > Flow detection would be useful to make a game where the user can "draw" a picture using head motion.
+
+![IMG_6755](https://user-images.githubusercontent.com/35357433/139716513-efd3af5f-27a2-4b6d-8f65-6af7cfbe4480.jpg)
+> Object Detection:
+> > Object detection would be useful to make a grocery expiration list application where the user can take a picture of all their grocery items for the system to evaluate and make into a grocery list.
+
 #### MediaPipe
 
 A more recent open source and efficient method of extracting information from video streams comes out of Google's [MediaPipe](https://mediapipe.dev/), which offers state of the art face, face mesh, hand pose, and body pose detection.
@@ -138,6 +154,7 @@ Try the two main features of this script: 1) pinching for percentage control, an
 
 (You might also consider how this notion of percentage control with hand tracking might be used in some of the physical UI you may have experimented with in the last lab, for instance in controlling a servo or rotary encoder.)
 
+> I play the harp, and I think that this libary would be a wonderful tool to create an application where the system acts like a "hand position critique" and buzzes to let the user know every time the hand position is incorrect or the elbow / arm is slacking. The similar application would work for piano and some other instruments as well.
 
 
 #### Teachable Machines
@@ -172,7 +189,7 @@ This might take a while to get fully installed. After installation, connect your
 
 **\*\*\*Whether you make your own model or not, include screenshots of your use of Teachable Machines, and write how you might use this to create your own classifier. Include what different affordances this method brings, compared to the OpenCV or MediaPipe options.\*\*\***
 
-
+> I got a bug for this and haven't fixed it yet. 
 *Don't forget to run ```deactivate``` to end the Teachable Machines demo, and to reactivate with ```source tmachine/bin/activate``` when you want to use it again.*
 
 
@@ -198,6 +215,15 @@ This can be as simple as the boat detector earlier.
 Try out different interaction outputs and inputs.
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
+The interaction that I am designing is a "rock, paper, scissor" game using the MediaPipe library. User will play against a robot (raspberry pi). User will use their hand gesture to display their action, and the system will output a random gesture each time. The user score will start at 3 with every new game. Every time the user wins, the score increments, and every time they lose, the score decrements. If the user score goes below 1, user loses. If the user score goes to 15, the user wins. 
+
+Here is an example of a losing game:
+![Page1 4](https://user-images.githubusercontent.com/35357433/139748295-20aa19ac-6ca9-43fe-b27b-54b90384d570.jpg)
+![Page2 4](https://user-images.githubusercontent.com/35357433/139748296-18373942-8b7d-4d01-8648-d0b6eedf971d.jpg)
+
+Here is an example of a winning game:
+![Page1 5](https://user-images.githubusercontent.com/35357433/139748334-7f40d072-6c3e-4224-9711-26463b55be43.jpg)
+![Page2 5](https://user-images.githubusercontent.com/35357433/139748335-02e03ea1-24dc-448c-a6dc-fa149f917eb6.jpg)
 
 ### Part C
 ### Test the interaction prototype
@@ -209,11 +235,19 @@ For example:
 1. When it fails, why does it fail?
 1. Based on the behavior you have seen, what other scenarios could cause problems?
 
+The first time that the tester lost to the system (raspberry pi), they thought that they lost the game completely. I had to later explain that they only lose the game completely once they have lost all of their points. Otherwise, the voice instruction helps, and the tester doesn't have issues navigating the game. The game is fairly simple so far, and "rock, paper, scissor" is a very universal and intuitive game.
+
+However, one scenario that I have thought of that could cause problems is if someone doesn't know the game of "rock, paper, scissor", and put up a gesture that is not included as one of the three. The system does not recognize unfamiliar gestures yet. The system should either ask the user to try again or to use that as a losing case. Perhaps a game introduction to first time players would also help.
+
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
-1. How bad would they be impacted by a miss classification?
-1. How could change your interactive system to address this?
-1. Are there optimizations you can try to do on your sense-making algorithm.
+> I am hoping that rock, paper, and scissor gestures are distinctive enough that there would be a smaller percentage of error. However, this should be communicated to the user so they are aware of their potential occasional random losses.
+3. How bad would they be impacted by a miss classification?
+> They can be fairly impacted by a miss classification, because their score would be impacted, and they can lose the game.
+5. How could change your interactive system to address this?
+> I am thinking that one of the buttons on the raspberry pi could be a revert button to revert a game if the gesture was incorrectly evaluated.
+7. Are there optimizations you can try to do on your sense-making algorithm.
+> It would be nice for the system to memorize a sillouette of each of the gesture to generate prediction each time. That way, the system doesn't have to go through the whole process of evaluating gestures from scratch every time.
 
 ### Part D
 ### Characterize your own Observant system
