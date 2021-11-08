@@ -154,7 +154,11 @@ Try the two main features of this script: 1) pinching for percentage control, an
 
 (You might also consider how this notion of percentage control with hand tracking might be used in some of the physical UI you may have experimented with in the last lab, for instance in controlling a servo or rotary encoder.)
 
+![IMG_6853 2](https://user-images.githubusercontent.com/35357433/140796950-477a30b2-bc65-4239-9b0c-254429bfe47a.JPG)
+![IMG_6854](https://user-images.githubusercontent.com/35357433/140796988-2b8475f6-f941-41f5-ba49-814a18e6eba8.JPG)
 > I play the harp, and I think that this libary would be a wonderful tool to create an application where the system acts like a "hand position critique" and buzzes to let the user know every time the hand position is incorrect or the elbow / arm is slacking. The similar application would work for piano and some other instruments as well.
+> It can also be used to simulate motion because it tracks the movement of different body parts (joints). One can use it to record a motion and put such motion on another object.
+> The percengae control would be really useful in a mixed reality setting where the user can use their fingers to control things like volume, zoom, focus, etc..
 
 
 #### Teachable Machines
@@ -189,7 +193,8 @@ This might take a while to get fully installed. After installation, connect your
 
 **\*\*\*Whether you make your own model or not, include screenshots of your use of Teachable Machines, and write how you might use this to create your own classifier. Include what different affordances this method brings, compared to the OpenCV or MediaPipe options.\*\*\***
 
-> I got a bug for this and haven't fixed it yet. 
+![IMG_6857](https://user-images.githubusercontent.com/35357433/140797577-2a89431f-5f18-485a-97a0-1af534e4f22e.JPG)
+> The TeachableMachines tool is extremely helpful to help building a classifier because it essentially does the classifying job for you. Its advantage over OpenCV or MediaPipe is that it can identify (supposedly) anything for you. On OpenCV and MediaPipe, one still has to analyze data and make classifications and predictions on their own. 
 *Don't forget to run ```deactivate``` to end the Teachable Machines demo, and to reactivate with ```source tmachine/bin/activate``` when you want to use it again.*
 
 
