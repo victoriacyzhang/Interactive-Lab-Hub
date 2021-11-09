@@ -220,7 +220,7 @@ This can be as simple as the boat detector earlier.
 Try out different interaction outputs and inputs.
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
-The interaction that I am designing is a "rock, paper, scissor" game using the MediaPipe library. User will play against a robot (raspberry pi). User will use their hand gesture to display their action, and the system will output a random gesture each time. The user score will start at 3 with every new game. Every time the user wins, the score increments, and every time they lose, the score decrements. If the user score goes below 1, user loses. If the user score goes to 15, the user wins. 
+The interaction that I am designing is a "rock, paper, scissor" game using the TeachableMachine library. User will play against a robot (raspberry pi). User will use their hand gesture to display their action, and the system will output a random gesture each time. The user score will start at 3 with every new game. Every time the user wins, the score increments, and every time they lose, the score decrements. If the user score goes below 1, user loses. If the user score goes to 15, the user wins. 
 
 Here is an example of a losing game:
 ![Page1 4](https://user-images.githubusercontent.com/35357433/139748295-20aa19ac-6ca9-43fe-b27b-54b90384d570.jpg)
@@ -252,7 +252,7 @@ However, one scenario that I have thought of that could cause problems is if som
 5. How could change your interactive system to address this?
 > I am thinking that one of the buttons on the raspberry pi could be a revert button to revert a game if the gesture was incorrectly evaluated.
 7. Are there optimizations you can try to do on your sense-making algorithm.
-> It would be nice for the system to memorize a sillouette of each of the gesture to generate prediction each time. That way, the system doesn't have to go through the whole process of evaluating gestures from scratch every time.
+> It could be helpful for the machine to learn the gestures while the games are playing to improve its gesture identification accuracy. However, there might be some overhead from the machine performing analysis during the games, though.
 
 ### Part D
 ### Characterize your own Observant system
@@ -260,14 +260,21 @@ However, one scenario that I have thought of that could cause problems is if som
 Now that you have experimented with one or more of these sense-making systems **characterize their behavior**.
 During the lecture, we mentioned questions to help characterize a material:
 * What can you use X for?
+> The game is meant to provide some interactive fun. It is a simple childhood game that is easy to understand and can help users relax in between work.
 * What is a good environment for X?
+> A well lit room would be a stellar room for the game. A clean background will also help a lot. These would help improving the classification accuracy.
 * What is a bad environment for X?
+> A bad environment would be somewhere dark or somewhere with a messy background. 
 * When will X break?
+> People do their rock, paper, and scissor gestures differently. If they do it differently than how the machine learned, the system might not understand and give a wrong prediction.
 * When it breaks how will X break?
+> The game will likely give a wrong prediction.
 * What are other properties/behaviors of X?
+> The camera resolution is quite low. I also trained the model using my computer camera instead of the webcam on the raspberry pi. The difference between the cameras might generate errors as well.
 * How does X feel?
-
+> The game is fairly simple and lightweight. It is pretty laggy, though. It could affect the user experience.
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+[Here is the link to me trying out the model. I tried to also see what the model would predict with just my head (no gestures).](https://youtu.be/8LGYaJlrDxE)
 
 ### Part 2.
 
