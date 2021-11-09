@@ -274,10 +274,15 @@ During the lecture, we mentioned questions to help characterize a material:
 * How does X feel?
 > The game is fairly simple and lightweight. It is pretty laggy, though. It could affect the user experience.
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
-[Here is the link to me trying out the model. I tried to also see what the model would predict with just my head (no gestures).](https://youtu.be/8LGYaJlrDxE)
+> [Here is the link to me trying out the model. I tried to also see what the model would predict with just my head (no gestures).](https://youtu.be/8LGYaJlrDxE)
 
 ### Part 2.
 
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+[Here is a video.](https://youtu.be/wmby-r6NaX0)
+
+A couple notes about the demo:
+> Due to the lag, I have to wait quite a few rounds before the system recognizes my new gesture. I had tried a few methods in my code trying to bypass this issue but wasn't able to overcome the camera lag.
+> Because of the classification model from Teachable Machine, it is hard for my system to correctly identifies "scissor". I was able to get the system to identify it sometimes while testing, but I wasn't able to get a video where a scissor was correctly identified. My classification accuracy for each gesture was actually quite high on the TeachableMachine site, but I am thinking that the difficulty of recognizing scissor might also come from the difference in cameras used (trained via laptop camera, and raspberry uses webcam).
