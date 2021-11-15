@@ -86,6 +86,17 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
 
+Idea 1:
+- Using this messaging system as a walkie talkie device. Both users will have the system on. If one person sends a message, the other person will hear it on their device. 
+Idea 2:
+- Using such a messaging system as a "complete-a-drawing" game. One user will use their joystick to draw something, and will pass on to another user to draw something. Every drawing will be stitched together at the end to create one mega drawing.
+Idea 3:
+- Using this system to build a remote that will open and close the door for me, so that I can open and close the door for my dog from the bed. I would install a motor on the door that will get signal from the remote device and either spring the open or shut it depending on what I press on the remote.
+Idea 4:
+- Using this system to build a suit that would light up and change color depeneding what I press on a secret remote. The remote would control the lights and turn them off / change color.
+Idea 5:
+- Using this system to build a riddle game. One user posts the riddle and others would guess it. Whoeever guesses correctly gets to become the next riddle sender.
+
 ### Part C
 ### Streaming a Sensor
 
