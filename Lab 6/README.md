@@ -117,9 +117,12 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
  ```
 
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
+This is what I saw on the MQTT Explorer after I connected the twizzler. 
+![IMG_6969](https://user-images.githubusercontent.com/35357433/141887007-a806e3e2-819d-4a58-bf06-f39c07c565e9.JPG)
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
-
+I picked the proximity sensor. This is what I saw when I ran the program.
+https://user-images.githubusercontent.com/35357433/141887100-6e80523c-7208-48f7-859d-280d7cec9ce7.MOV
 
 ### Part D
 ### The One True ColorNet
@@ -151,20 +154,27 @@ You may ask "but what if I missed class?" Am I not admitted into the collective 
 Of course not! You can go to [https://one-true-colornet.glitch.me/](https://one-true-colornet.glitch.me/) and become one with the ColorNet on the inter-webs. Glitch is a great tool for prototyping sites, interfaces and web-apps that's worth taking some time to get familiar with if you have a chance. Its not super pertinent for the class but good to know either way. 
 
 **\*\*\*Can you set up the script that can read the color anyone else publish and display it on your screen?\*\*\***
-
+I set up the script that can read the color from the colors topic on IDD. I didn't work on this in class so I wasn't able to test it when everyone else was publishing colors. Instead, I just sent requests to the MQTT server from the portal.
 
 ### Part E
 ### Make it your own
 
 Find at least one class (more are okay) partner, and design a distributed application together based on the exercise we asked you to do in this lab.
 
+Partners: James Parsons - jsp285, Mahir Kothary - mk942
+
 **\*\*\*1. Explain your design\*\*\*** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
+We made a game of HORSE using the distance sensors over a distributed system. This was especially cool as two of us live off campus so it was a true distributed system. In the game, one person would start by measuring a distance using their distance sensor, and the person following them would try to measure the same distance using their own distance sensor. A small percentage of error is allowed. If the difference in the two distances is greater than the allowed percentage, the later person would lose a point. Each time a person loses a point, they get an additional letter to the word "HORSE". Everyone starts with an empty string. When a person spells out "HORSE", they lose. The person who gets "HORSE" last wins.
 
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
+Each individual pi has a distance sensor hooked up.  Each pi can send distance measurements.  Each pi receives, sees, and prints every distance that a player enters.  The main scoring program was run on James's computer.  The scoring program records and changes every player's score accordingly, which also gets published and can be seen by each individual pi. Every node on the system receives and publishes alerts to the entire system.
+![horse](https://user-images.githubusercontent.com/35357433/141891229-05ad3cb1-f33b-4aeb-a474-e7f609aafacf.jpeg)
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
+The system is really intuitive because it is similar to how most games are played - people take turns, and when they lose in a round, they lose a point. The playing portion of the game is intuitive to understand and to interact. The scoring scheme involving "HORSE" would take an explanation, but so do many games in the world. With a proper explanation of the game, the system is not hard to interact. Users (in the wild) don't need to know how to play it right away since it is okay for games to need some description to communicate its purpose to the users.
 
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
+[Here is a video](https://youtu.be/HvUTrdIunVY)
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
