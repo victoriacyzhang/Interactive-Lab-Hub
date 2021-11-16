@@ -183,6 +183,8 @@ Each individual pi has a distance sensor hooked up.  Each pi can send distance m
 The system is really intuitive because it is similar to how most games are played - people take turns, and when they lose in a round, they lose a point. The playing portion of the game is intuitive to understand and to interact. The scoring scheme involving "HORSE" would take an explanation, but so do many games in the world. With a proper explanation of the game, the system is not hard to interact. Users (in the wild) don't need to know how to play it right away since it is okay for games to need some description to communicate its purpose to the users.
 
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
+
+Note: we had to click twice sometimes because otherwise the distance sensor does not catch well enough.
 [Here is a video](https://youtu.be/HvUTrdIunVY)
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
