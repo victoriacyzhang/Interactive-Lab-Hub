@@ -88,12 +88,16 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 Idea 1:
 - Using this messaging system as a walkie talkie device. Both users will have the system on. If one person sends a message, the other person will hear it on their device. 
+
 Idea 2:
 - Using such a messaging system as a "complete-a-drawing" game. One user will use their joystick to draw something, and will pass on to another user to draw something. Every drawing will be stitched together at the end to create one mega drawing.
+
 Idea 3:
 - Using this system to build a remote that will open and close the door for me, so that I can open and close the door for my dog from the bed. I would install a motor on the door that will get signal from the remote device and either spring the open or shut it depending on what I press on the remote.
+
 Idea 4:
 - Using this system to build a suit that would light up and change color depeneding what I press on a secret remote. The remote would control the lights and turn them off / change color.
+
 Idea 5:
 - Using this system to build a riddle game. One user posts the riddle and others would guess it. Whoeever guesses correctly gets to become the next riddle sender.
 
@@ -117,10 +121,12 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
  ```
 
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
+
 This is what I saw on the MQTT Explorer after I connected the twizzler. 
 ![IMG_6969](https://user-images.githubusercontent.com/35357433/141887007-a806e3e2-819d-4a58-bf06-f39c07c565e9.JPG)
 
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
+
 I picked the proximity sensor. This is what I saw when I ran the program.
 https://user-images.githubusercontent.com/35357433/141887100-6e80523c-7208-48f7-859d-280d7cec9ce7.MOV
 
@@ -154,6 +160,9 @@ You may ask "but what if I missed class?" Am I not admitted into the collective 
 Of course not! You can go to [https://one-true-colornet.glitch.me/](https://one-true-colornet.glitch.me/) and become one with the ColorNet on the inter-webs. Glitch is a great tool for prototyping sites, interfaces and web-apps that's worth taking some time to get familiar with if you have a chance. Its not super pertinent for the class but good to know either way. 
 
 **\*\*\*Can you set up the script that can read the color anyone else publish and display it on your screen?\*\*\***
+
+https://user-images.githubusercontent.com/35357433/141892086-101f2a9f-fad3-4442-bbaf-af0be7c9601f.mov
+
 I set up the script that can read the color from the colors topic on IDD. I didn't work on this in class so I wasn't able to test it when everyone else was publishing colors. Instead, I just sent requests to the MQTT server from the portal.
 
 ### Part E
